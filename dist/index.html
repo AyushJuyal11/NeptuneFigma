@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="h-screen bg-mainBg flex gap-x-6">
+        <div class="w-[20vw] h-full gap-y-6 bg-white p-8 flex flex-col">
+            <div class="p-3">
+                <img src="assets/images/Union.svg" alt="main-logo">
+            </div>
+            <div class="p-3 border-bColor border-1 rounded-sm flex gap-x-2 flex-wrap w-full">
+                <img src="assets/images/UserLogo.png" alt="UserLogo">
+                <div class="grow">
+                    <p class="font-bold font-stretch-expanded">Jessica Thompson</p>
+                    <p class="text-sm text-[#626D82]">Primary User</p>
+                </div>
+                <img src="assets/images/arrow.png" alt="" class="size-fit align-baseline">
+            </div>
+            <div class="grow">
+                <ul class="list-none flex flex-col gap-y-4">
+                    <li class="flex gap-x-3 flex-wrap text-lg text-side-text p-3"><img src="assets/images/home.png"
+                            alt="home"><span><a href="#">Home</a></span></li>
+                    <li class="flex gap-x-3 flex-wrap text-lg text-side-text bg-[#D3F7B5] p-3 rounded-lg"><img
+                            src="assets/images/document.png" alt="documents"><a href="#">Documents</a></li>
+                    <li class="flex gap-x-3 flex-wrap text-lg text-side-text p-3"><img src="assets/images/chat.png"
+                            alt="chat"><a href="#">Chat with Neptune</a></li>
+                    <li class="flex gap-x-3 flex-wrap text-lg text-side-text p-3"><img src="assets/images/help.png"
+                            alt="help"><a href="#">Help</a></li>
+                    <li class="flex gap-x-3 flex-wrap text-lg text-side-text p-3"><img src="assets/images/settings.png"
+                            alt="settings"><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-y-3 p-3">
+                <img src="assets/images/phone.png" alt="contact phone icon" class="w-fit pl-2">
+                <p class="pl-2 text-2xl font-bold text-[#1F4451]">Having trouble ? </p>
+                <p class="pl-2 text-[#626D82] text-balance w-[70%]">Feel free to contact us and we will always help you
+                    through process.</p>
+                <button class="p-2 text-center text-white bg-[#1F4451] w-fit rounded-sm">Contact us</button>
+            </div>
+        </div>
+        <div class="py-7 px-20 flex flex-col grow gap-y-10">
+            <nav class="flex gap-x-2">
+                <ul class="flex items-center gap-x-3">
+                    <li class="text-[#436D7C] p-2"><a href="#" class="text-lg">Home</a></li>
+                    <li class="p-2"><img src="assets/images/right-arrow.png" alt="right-nav-arrow"></li>
+                    <li class="text-[#B5BDCD] p-2"><a href="#" class="text-lg">Documents</a></li>
+                </ul>
+            </nav>
+            <div class="flex justify-between">
+                <h1 class="p-2 font-[#2A2A2A] text-4xl font-bold">My Documents</h1>
+                <div class="flex justify-end items-center w-[20%]" >
+                <input class="p-3 bg-white w-full text-[#B5BDCD] font-semibold border-[#B5BDCD] border-1 rounded-sm"
+                    type="text" placeholder="Search documents">
+                <img class="absolute p-3" src="assets/images/search.png" alt="...">
+                </div>
+           </div>
+            <div class="overflow-hidden rounded-md border border-[#B5BDCD]">
+            <table class="w-full bg-white border-collapse">
+                <thead>
+                    <tr class="p-4 border-b-1 border-[#E8ECF1]">
+                        <th class="p-4 text-left">
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                        </th>
+                        <th class="p-4 text-left">Document Name</th>
+                        <th class="p-4 text-left">Status</th>
+                        <th class="p-4 text-left">Last Modified</th>
+                        <th class="p-4 text-left"></th>
+                        <th class="p-4 text-left"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b-1 border-[#E8ECF1]">
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5 "><div class="px-2 py-2 inline bg-[#436D7C] rounded-4xl text-white text-center">Needs Signing</div></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 w-[75%] border-[#B5BDCD] border-1 text-[#626D82] rounded-sm font-medium">Sign now</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                    <tr class="border-b-1  border-[#E8ECF1]">
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5"><div class="px-2 py-2 inline rounded-4xl bg-[#E8ECF1] text-[#626D82] text-center">Pending</div><br><span class="text-[#B5BDCD]">Waiting for</span> <span class="text-[#436D7C]">1 person</span></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 border-[#B5BDCD] text-[#626D82] w-[75%] border-1 rounded-sm font-medium">Preview</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                    <tr class="border-b-1 border-[#E8ECF1]">
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5"><div class="px-2 py-2 inline rounded-4xl bg-[#E8ECF1] text-[#626D82] text-center">Pending</div><br><span class="text-[#B5BDCD]">Waiting for</span> <span class="text-[#436D7C]">1 person</span></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 border-[#B5BDCD] text-[#626D82] w-[75%] border-1 rounded-sm font-medium">Preview</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                    <tr class="border-b-1 border-[#E8ECF1]">
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5"><div class="px-2 py-2 inline rounded-4xl bg-[#D3F7B5] text-[#1F4451] text-center">Completed</div></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 w-[75%] border-[#B5BDCD] border-1 text-[#626D82] rounded-sm font-medium ">Download PDF</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                    <tr class="border-b-1 border-[#E8ECF1]">
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5"><div class="px-2 py-2 inline rounded-4xl bg-[#D3F7B5] text-[#1F4451] text-center">Completed</div></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 w-[75%] border-[#B5BDCD] border-1 text-[#626D82] rounded-sm font-medium">Download PDF</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-5"><input type="checkbox"></td>
+                        <td class="px-4 py-5 text-lg text-[#436D7C] font-medium">Title of Document Goes Here</td>
+                        <td class="px-4 py-5"><div class="px-2 py-2 inline rounded-4xl bg-[#D3F7B5] text-[#1F4451] text-center">Completed</div></td>
+                        <td class="px-4 py-5 text-[#626D82]"><time class="font-medium" datetime="10/22/2024">10/22/2024<br>2:01 pm</time></td>
+                        <td><button class="px-3 py-2.5 w-[75%] border-[#B5BDCD] border-1 text-[#626D82] rounded-sm font-medium">Download PDF</button></td>
+                        <td><button><img src="assets/images/vertical-dots.png" alt=""></button></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+       </div>
+    </div>
+</body>
+
+</html>
